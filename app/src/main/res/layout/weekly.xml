@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:clickable="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="40dp"
+            android:id="@+id/daily_icon"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/daily_weather_info"
+                android:src="@drawable/art_light_clouds"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tommorow"
+            android:textColor="@color/grey_700"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/daily_icon"
+            android:id="@+id/day_of_week"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-condensed"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:textColor="@color/grey_700"
+            android:layout_below="@id/day_of_week"
+            android:layout_toRightOf="@id/daily_icon"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:id="@+id/sky_status"
+            android:fontFamily="sans-serif-condensed"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/temp_high"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15"
+            android:textColor="@color/grey_700"
+            android:textSize="14dp"
+            android:layout_below="@id/temp_high"
+            android:id="@+id/temp_low"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

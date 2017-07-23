@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.joseph.angani.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="170dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_height="100dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/art_light_clouds"
+                android:id="@+id/today_status_icon"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monday, July 22"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-condensed"
+
+                android:id="@+id/today_date"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/today_date"
+                android:text="27"
+                android:layout_alignLeft="@id/today_date"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="35sp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/today_high"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/today_high"
+                android:layout_below="@id/today_high"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="28sp"
+                android:id="@+id/today_low"
+                android:text="15"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/today_high"
+                android:layout_alignBaseline="@id/today_high"
+                android:layout_marginLeft="10dp"
+                android:text="Eldoret"
+                android:id="@+id/city"
+                android:fontFamily="cursive"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/today_low"
+                android:text="Clear"
+                android:textColor="@color/white"
+                android:layout_marginRight="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="28sp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/today_status"
+                />
+
+
+
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/weather_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</ScrollView>
